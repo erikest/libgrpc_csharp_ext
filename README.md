@@ -1,10 +1,10 @@
-#libgrpc_csharp_ext
+# libgrpc_csharp_ext
 
-##Overview
+## Overview
 
 These scripts install the necessary tools to compile libgrpc_csharp_ext.
 
-###Instructions
+### Instructions
 
 1. mkdir ~/libgrpc_csharp_ext (or whatever root directory you want)
 2. cd ~/libgrpc_csharp_ext
@@ -16,7 +16,7 @@ These scripts install the necessary tools to compile libgrpc_csharp_ext.
 7. chmod +x compile_csharp_ext.sh
 8. ./compile_csharp_ext.sh
 
-###Notes
+### Notes
 
 The install tool chain script is distilled from the grpc repository (BUILD.md)
 The compile script is scrapped together from the grpc repository build scripts and those could change.

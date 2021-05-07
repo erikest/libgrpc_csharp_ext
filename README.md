@@ -9,12 +9,14 @@ These scripts install the necessary tools to compile libgrpc_csharp_ext.
 1. mkdir ~/libgrpc_csharp_ext (or whatever root directory you want)
 2. cd ~/libgrpc_csharp_ext
 2. git clone https://github.com/erikest/libgrpc_csharp_ext
-3. chmod +x installToolChain.sh
-4. sudo ./installToolChain.sh
+3. chmod +x installToolchain.sh
+4. sudo ./installToolchain.sh
 5. chmod +x gitgRPCsource.sh
 6. ./gitgRPCsource.sh
-7. chmod +x compile_csharp_ext.sh
-8. ./compile_csharp_ext.sh
+7. Add the following to the first line of CMakeLists.txt located in grpc:
+	add_link_options(-latomic)
+8. chmod +x compile_csharp_ext.sh
+9. ./compile_csharp_ext.sh
 
 ### Notes
 
